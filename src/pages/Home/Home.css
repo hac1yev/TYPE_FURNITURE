@@ -1,0 +1,463 @@
+.hero-section {
+    padding: 0 20px;
+}
+
+.hero-img-col img {
+    width: 100%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 30px;
+}
+
+.hero-content h1 {
+    width: 150%;
+    background: transparent;
+    z-index: 1;
+    color: #2D2D2B;
+    font-family: Didot;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 86px; 
+    margin-bottom: 0;
+}
+
+.hero-content p {
+    color: var(--Black, #2D2D2B);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    margin-bottom: 0;
+}
+
+.hero-content button, 
+.discount-section button {
+    max-width: 330px;
+    width: 100%;
+    height: 54px;
+    border: 1px solid var(--Primary, #B8926A);
+    outline: none;
+    border-radius: 10px;
+    background: var(--Primary, #B8926A);
+    color: var(--Background, #EAE6DF);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+}
+
+.hero-content button:hover,
+.discount-section button:hover {
+    background-color: transparent;
+    color: var(--Primary, #B8926A);
+}
+
+
+.hero-content button img, 
+.discount-section button img {
+    margin-top: -4px;
+    background-color: transparent;
+    filter: invert(1);
+}
+
+/* FURNITURE SLIDER */
+
+.furniture-slider-card {
+    position: relative;
+    width: 100%;
+    height: 193px;
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.furniture-slider-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.furniture-slider-card:focus {
+    outline: none!important; 
+}
+
+.furniture-slider-blur {
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(7.5px);
+    bottom: 0;
+    position: absolute;
+    padding: 17px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.furniture-slider-blur p {
+    margin-bottom: 0;
+    color: var(--Background, #EAE6DF);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; 
+}
+
+.category-slider {
+    padding: 60px 25px;
+    position: relative;
+}
+
+.category-slider .slick-track {
+    display: flex!important;
+    gap: 15px;
+}
+
+.category-slider .slick-prev,
+.category-slider .slick-next {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    color: #fff!important;
+    background-color: #B8926A;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.category-slider .slick-next {
+    right: 25px;
+    top: 93%!important;
+}
+.category-slider .slick-prev {
+    left: 94%;
+    top: 93%!important;
+    z-index: 1;
+}
+
+.slider-hr {
+    padding: 0 25px;
+    width: 40%;
+    height: 4px;
+    background: #B8926A;
+    margin-left: 25px;
+}
+
+
+/* ABOUT US SECTION */
+
+.about-us-section {
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.about-us-title {
+    color: var(--Black, #2D2D2B);
+    font-family: Didot;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px; 
+    margin-bottom: 20px;
+}
+
+.about-us-img {
+    border-top-left-radius: 50%;
+}
+
+.about-us-img img {
+    border-top-left-radius: 50%;
+    width: 100%;
+}
+
+.about-us-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px!important;
+}
+
+.about-us-content p {
+    color: var(--Black, #2D2D2B);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+.about-us-content button {
+    max-width: 330px;
+    height: 54px;
+    color: var(--Primary, #B8926A);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid var(--Primary, #B8926A);
+    transition: all 0.2s ease;
+}
+
+.about-us-content button:hover {
+    background-color: var(--Primary, #B8926A);
+    color: #fff;
+}
+
+.category-slider .slick-dots {
+    width: 95%!important;
+}
+
+
+/* DISCOUNT SECTION */
+
+.discount-section {
+    margin: 40px 0;
+    width: 100%;
+    background-image: url(../../assets/images/furnitures/discount-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.discount-section h1 {
+    color: #FFF;
+    font-family: Didot;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px; 
+}
+
+.discount-section p {
+    color: #FFF;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+.discount-section h1,
+.discount-section p {
+    margin: 0;
+}
+
+.discount-section p {
+    width: 33%;
+    text-align: center;
+}
+
+
+/* PRODUCT FURNITURE */
+
+.product-furniture {
+    padding: 15px 15px 40px 15px;
+}
+
+.product-furniture-img {
+    position: relative;
+}
+
+.product-furniture-img > img {
+    width: 100%;
+    height: 267px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-heart-img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #fff;
+    padding: 7px 11px;
+    border-radius: 5px;
+} 
+
+.product-furniture-col p {
+    color: var(--Black, #2D2D2B);
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; 
+}
+
+.product-furniture-col span {
+    color: var(--Primary, #B8926A);
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+}
+
+
+@media screen and (max-width: 1200px){
+    .hero-content h1 {
+        font-size: 60px;
+        line-height: 66px; 
+    }
+
+    .category-slider .slick-prev {
+        left: 92%;
+    }
+}
+@media screen and (max-width: 991.5px){
+    .hero-section {
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+
+    .hero-section .row {
+        gap: 30px;
+    }
+
+    .hero-content h1 {
+        width: 100%;
+    }
+
+    .category-slider {
+        padding: 60px 15px;
+    }
+
+    .category-slider .slick-prev {
+        left: 90%;
+    }
+
+    .discount-section {
+        padding: 50px 15px;
+        gap: 20px;
+    }
+    
+    .discount-section h1 {
+        font-size: 54px;
+        line-height: 44px; 
+    }
+    
+    .discount-section p {
+        font-size: 16px;
+        line-height: 22px; 
+    }
+    
+    .discount-section p {
+        width: 50%;
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width: 768px){
+    .hero-section {
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+
+    .hero-section .row {
+        gap: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 50px;
+        line-height: 56px;
+    }
+
+    .category-slider {
+        padding: 30px 15px;
+    }
+
+    .category-slider .slick-prev, 
+    .category-slider .slick-next {
+        display: none!important;
+    }
+
+    .about-us-content {
+        padding: 15px!important;
+    }
+
+    .discount-section {
+        padding: 50px 15px;
+    }
+    
+    .discount-section h1 {
+        font-size: 44px;
+        line-height: 36px; 
+    }
+    
+    .discount-section p {
+        font-size: 16px;
+        line-height: 20px; 
+    }
+    
+    .discount-section p {
+        width: 90%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 500px){
+    .hero-section {
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+
+    .hero-section .row {
+        gap: 30px;
+    }
+
+    .hero-content {
+        gap: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .hero-content button,
+    .discount-section button {
+        width: 250px;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .category-slider {
+        padding: 30px 15px;
+        padding-top: 50px;
+    }
+
+    .discount-section h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .discount-section p {
+        width: 100%;
+        text-align: center;
+    }
+}
